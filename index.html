@@ -8,17 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">FaKeLoL2006</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Creations</a>
-              </li>
-        </ul>
-      </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar"> <!-- Collapse navbar -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#creations">Creations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
       <div class="hero bg-dark text-white">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -29,8 +40,8 @@
                 <h1 class="display-5 fw-bold lh-1 mb-3">Welcome To FaKeLoL2006's Portfolio</h1>
                 <p class="lead">You Ask For It, I Deliver</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Hire Me!</button>
-                    <button type="button" class="btn btn-outline-light btn-lg px-4">Explore My Creations</button>
+                    <a href="./contact.html" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" role="button">Hire Me</a>
+                    <a href="#creations" class="btn btn-outline-light btn-lg px-4" role="button">Explore My Creations</a>
                 </div>
               </div>
             </div>
@@ -128,7 +139,7 @@
             </div>
         </div>
       </section>
-      <section class="packages">
+      <section class="sections creations-section" id="creations">
         <div class="container-fluid text-white bg-dark">
             <div class="section-title text-white">
                 <h2 style="color: white;">Check Out My Creations</h2>
