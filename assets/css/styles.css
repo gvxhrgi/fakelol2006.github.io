@@ -25,7 +25,7 @@
     width: 70px;
     height: 70px;
     line-height: 70px;
-    background: #fc5356;
+    background: #21A8D8;
     color: #ffffff;
     text-align: center;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     right: 0;
     border-radius: 10px;
     width: 0;
-    background: #710627;
+    background: #2274A5;
     z-index: -1;
     -moz-transition: ease all 0.35s;
     -o-transition: ease all 0.35s;
