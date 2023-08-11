@@ -124,9 +124,9 @@ textarea.input{
     min-height: 150px;
     overflow: auto;
 }
-.btn{
+form button{
     position: relative;
-    top: 100px;
+    top: 15px;
     background: #fff;
     outline: none;
     border: none;
@@ -137,6 +137,9 @@ textarea.input{
     color: #8f50ec;
     cursor: pointer;
     font-weight: 500;
+}
+.upload-box label{
+    color: white;
 }
 .go-back-btn{
     list-style: none;
