@@ -1,0 +1,13 @@
+body{
+    background: #343a40;
+}
+
+.image{
+    text-align: center;
+}
+.image h2{
+    color: white;
+}
+.image p{
+    color: wheat;
+}

@@ -11,7 +11,7 @@
 <body>
     <style>
         body{
-            background-color: #8f50ec;
+            background-color: #343a40;
         }
     </style>
     <div class="container">
@@ -47,11 +47,7 @@
                         <label style="color: #fff;">Message</label>
                         <textarea name="" id="messageInput" cols="30" rows="10" class="input" required></textarea>
                     </div>
-                    <div class="upload-box" style="margin-top: 150px;">
-                        <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple />
-                    </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" style="margin-top: 15vh;">Submit</button>
                 </form>
     <script>
         async function sendContact(ev) {
@@ -63,14 +59,12 @@
             .getElementById('messageInput').value;
           const senderUser = document
           .getElementById('robloxinput').value;
-          const images = document.getElementById('formFileMultiple').value;
           const webhookBody = {
             embeds: [{
               title: 'Contact Form Submitted',
               fields: [
                 { name: 'Roblox Username:', value: senderUser },
                 { name: 'Discord Username:', value: senderEmail },
-                { Name: 'Images (If Any)', value: images},
                 { name: 'Message:', value: senderMessage }
               ]
             }],
@@ -87,9 +81,11 @@
           });
   
           if (response.ok) {
-            document.getElementById("myModal").style.display = "block";
+            alert('Request Sent Successfully!')
+            window.location.reload()
           } else {
             alert('There was an error! Try again later!');
+            window.location.reload()
           }
         }
       </script>
